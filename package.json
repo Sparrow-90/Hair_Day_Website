@@ -2,7 +2,6 @@
   "name": "hair_day_website",
   "version": "1.0.0",
   "description": "The website for a fictional hair salon, crafted as a final project for the Meta: HTML CSS in Depth course offered on the Coursera platform.",
- 
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel src/*.html",
@@ -12,6 +11,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.11.0"
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1"
   }
 }
