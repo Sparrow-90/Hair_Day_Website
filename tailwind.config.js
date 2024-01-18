@@ -10,6 +10,9 @@ module.exports = {
       },
       fontFamily: {
         'kantumury' : ['Kantumruy Pro', 'sans-serif']
+      },
+      maxWidth: {
+        'myWidth': '82rem'
       }
     },
   },
