@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{html,js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        accentColor: '#D0604C'
+      },
+      fontFamily: {
+        'kantumury' : ['Kantumruy Pro', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
