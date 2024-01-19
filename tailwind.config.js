@@ -15,7 +15,8 @@ module.exports = {
         'myWidth': '82rem'
       },
       backgroundImage: {
-        'homeBg' : 'url("./assets/pic1.png")'
+        'homeBg' : 'url("./assets/pic1.png")',
+        'quoteBg' : 'url("./assets/pic3.jpg")'
       }
     },
   },
