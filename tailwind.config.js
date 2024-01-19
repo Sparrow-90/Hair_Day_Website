@@ -13,6 +13,9 @@ module.exports = {
       },
       maxWidth: {
         'myWidth': '82rem'
+      },
+      backgroundImage: {
+        'homeBg' : 'url("./assets/pic1.png")'
       }
     },
   },
