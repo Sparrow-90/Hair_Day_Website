@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        accentColor: '#D0604C'
+        accentColor: '#D0604C',
+        hoverColor: '#EF7762'
       },
       fontFamily: {
         'kantumury' : ['Kantumruy Pro', 'sans-serif'],
