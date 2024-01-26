@@ -7,12 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <title>Hair Day</title>
 </head>
 <body class="font-kantumury bg-white">
-    <main class="">
-        <header class="bg-white max-w-myWidth mx-auto py-6 flex justify-between backdrop-blur-md">
+    <main class="w-full">
+        <header class="bg-transparent backdrop-blur-md w-full mx-auto py-6 flex justify-between fixed">
             <img class="w-20 h-8 pl-4" src="./assets/hd_logo.png" alt="hair day logotype">
+            <img class="bar-btn--js w-8 mr-4 md:hidden fixed top-6 right-0 z-20" src="./assets/bars.svg" alt="">
+            <img class="close-btn--js w-8 mr-4 md:hidden fixed top-6 right-0 z-20 hidden" src="./assets/close.svg" alt="">
+            <nav class="mobile-nav--js bg-black bg-opacity-90 h-screen justify-center items-center w-full fixed top-0 grid hidden">
+                <ul class="flex flex-col text-white gap-8 pr-8 uppercase">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
             <nav class="hidden md:block text-accentColor font-bold">
                 <ul class="flex gap-4 pr-8 uppercase ">
                     <li>
@@ -30,7 +51,7 @@
                 </ul>
             </nav>
         </header>
-        <section class="w-full h-screen mx-auto text-white flex flex-col justify-center items-center bg-homeBg bg-cover bg-center bg-fixed" id="home">
+        <section class="w-full bg-gray-500 h-screen mx-auto text-white flex flex-col justify-center items-center bg-homeBg bg-cover bg-center bg-fixed bg-blend-multiply" id="home">
             <img class="mt-60 mb-5 px-4" src="./assets/title.png" alt="Hair Day title">
             <p class="font-light italic text-center mb-20 w-1/2 text-lg md:text-2xl leading-10">
                 Hair Day - Your hair, our passion,<br> 
@@ -40,17 +61,17 @@
                 <a href="#contact">STAY IN TOUCH</a>
             </button>
         </section>
-        <section class="w-full mx-auto flex flex-col md:flex-row" id="about">
-            <img class="order-2 md:order-1 mt-16 md:mt-0" src="./assets/pic_about.png" alt="">
+        <section class="w-full mx-auto grid md:grid-cols-2" id="about">
+            <img class="order-2 md:order-1 mt-16 md:mt-0" src="./assets/image-about2.jpeg" alt="">
             <article class="order-1 md:order-2 mt-16 md:mt-72">
-                <h1 class="text-center md:text-left md:ml-16 text-accentColor font-bold text-3xl md:text-5xl">Welcome to Hair Day</h1>
-                <p class="mt-5 md:mt-10 md:text-left md:ml-16 text-base md:text-xl text-center font-bold md:font-medium px-4">
+                <h1 class="font-PTsans text-center md:text-left md:ml-16 text-accentColor font-bold text-3xl md:text-5xl">Welcome to Hair Day</h1>
+                <p class="mt-5 md:mt-10 md:text-left md:ml-16 text-base md:text-xl text-center font-bold md:font-medium max-w-xl">
                     Welcome to Hair Day - the place where your hair begins its journey to perfection! Our team of experienced hairdressers are true artists, ready to highlight your individuality through unique cuts and coloring. Step into our salon, feel the relaxing atmosphere, and entrust yourself to the hands of experts. With Hair Day, every day becomes exceptional - give your hair a moment of beauty!
                 </p>
             </article>
         </section>
         <section class="w-full mx-auto mt-16 md:mt-28 mb-16 px-4 flex flex-col items-center" id="services">
-            <h1 class="text-center text-accentColor font-bold text-3xl md:text-5xl">Our Serwices</h1>
+            <h1 class="font-PTsans text-center text-accentColor font-bold text-3xl md:text-5xl">Our Serwices</h1>
             <p class="text-center text-accentColor font-bold text-3xl">...</p>
             <p class="mt-5 text-base md:text-xl text-center font-bold md:font-medium px-4 md:max-w-4xl">
                 Experience excellence at Hair Day with our precision cuts, personalized coloring, and pampering services. Our skilled stylists are dedicated to bringing out the best in your locks. Your confidence, our expertise – indulge in the excellence of Hair Day services.
@@ -58,28 +79,28 @@
             <div class="grid gap-4 md:grid-cols-4 md:mt-16">
                 <article class="bg-white p-5 flex flex-col justify-center items-center gap-4 mt-14 shadow-md w-full">
                     <img class="w-20 h-20 mt-8" src="./assets/icon_scissors.png" alt="scissors icon">
-                    <h3 class="text-2xl font-bold mt-5">Haircut</h3>
+                    <h3 class="font-PTsans text-2xl font-bold mt-5">Haircut</h3>
                     <p class="px-4 text-center mb-14 text-md">
                         Transform your look with expert haircuts, crafted by skilled stylists to complement your unique personality.
                     </p>
                 </article>
                 <article class="bg-white p-5 flex flex-col justify-center items-center gap-4 mt-14 shadow-md w-full">
                     <img class="w-20 h-20 mt-8" src="./assets/icon_hair_dryer.png" alt="hair dryer icon">
-                    <h3 class="text-2xl font-bold mt-5">Styling</h3>
+                    <h3 class="font-PTsans text-2xl font-bold mt-5">Styling</h3>
                     <p class="px-4 text-center mb-14 text-md">
                         Maintain your signature look with precision trimming for fresh, tidy, and perfectly groomed hair.
                     </p>
                 </article>
                 <article class="bg-white p-5 flex flex-col justify-center items-center gap-4 mt-14 shadow-md w-full">
                     <img class="w-20 h-20" src="./assets/icon_razor.png" alt="scissors icon">
-                    <h3 class="text-2xl font-bold mt-5">Triming</h3>
+                    <h3 class="font-PTsans text-2xl font-bold mt-5">Triming</h3>
                     <p class="px-4 text-center text-md mb-14">
                         Experience meticulous grooming with our shaving services, ensuring a clean and polished appearance
                     </p>
                 </article>
                 <article class="bg-white p-5 flex flex-col justify-center items-center gap-4 mt-14 shadow-md w-full">
                     <img class="w-20 h-20 mt-8" src="./assets/icon_straight_razor.png" alt="scissors icon">
-                    <h3 class="text-2xl font-bold mt-5">Shaving</h3>
+                    <h3 class="font-PTsans text-2xl font-bold mt-5">Shaving</h3>
                     <p class="px-4 text-center mb-14 text-md">
                         Elevate your aesthetic with professional styling, where creativity and expertise create stunning looks tailored to your preferences.
                     </p>
@@ -89,7 +110,7 @@
                 <a href="#contact">BOOK NOW</a>
             </button>
         </section>
-        <section class="bg-gray-500 w-full h-screen mx-auto text-white flex flex-col justify-center items-center bg-quoteBg bg-center bg-fixed bg-blend-multiply bg-cover">
+        <section class="bg-gray-500 w-full h-screen mx-auto text-white flex flex-col justify-center items-center bg-contactBg bg-center bg-fixed bg-blend-multiply bg-cover">
             <p class="mt-28 p-4 py-4 pt-14 italic backdrop-blur-sm text-center md:text-3xl md:max-w-5xl">
                 Good grooming is integral, and impeccable style is a must. If you don't look the part, no one will want to give you time or money.
             </p>
@@ -98,7 +119,7 @@
             </p>
         </section>
         <section class="max-w-myWidth mx-auto mt-16 md:mt-44" id="staff">
-            <h3 class="text-center text-accentColor font-bold text-3xl md:text-5xl">Our Staff</h3>
+            <h3 class="font-PTsans text-center text-accentColor font-bold text-3xl md:text-5xl">Our Staff</h3>
             <p class="text-center text-accentColor font-bold text-3xl mb-5">...</p>
             <div class="grid md:grid-cols-3 md:mt-28">
                 <article class="flex flex-col justify-center items-center">
@@ -114,7 +135,7 @@
                     <img src="./assets/person2.png" alt="image of person">
                     <h4 class="mt-6 text-2xl font-bold">Marc Smith</h4>
                     <p>barber</p>
-                    <div class="flex gap-4 mb-14 mt-4">
+                    <div class="flex gap-4 mb-16 mt-4">
                         <img src="./assets/instagram_icon.svg" alt="">
                         <img src="./assets/facebook_icon.svg" alt="">
                     </div>
@@ -131,31 +152,31 @@
             </div>
         </section>
         <section class="max-w-full mx-auto" id="prices">
-            <div class="flex flex-col md:flex-row">
-                <img class="mt-16" src="./assets/pic_prices.png" alt="">
+            <div class="grid md:grid-cols-2">
+                <img class="mt-16 h-screen w-full" src="./assets/image-prices2.jpeg" alt="">
                 <article class="mt-16">
-                    <h3 class="text-center text-accentColor font-bold text-3xl md:text-5xl md:mt-40">Prices List</h3>
+                    <h3 class="font-PTsans text-center text-accentColor font-bold text-3xl md:text-5xl md:mt-40">Prices List</h3>
                     <p class="text-center text-accentColor font-bold text-3xl mb-5">...</p>
-                    <p class="mt-5 text-base text-center font-bold px-4">
+                    <p class="mt-5 text-base md:text-xl text-center px-4">
                         Discover transparent and competitive prices at Hair Day. From cuts to styling, we prioritize quality and affordability, ensuring exceptional services with clear, fair pricing.
                     </p>
-                    <div class="flex justify-between mx-10 border-b-2 mt-12">
+                    <div class="flex justify-between mx-10 border-b-2 mt-12 text-base md:text-lg">
                         <p class="font-bold">Haircut</p>
                         <p class="text-accentColor font-bold">$40</p>
                     </div>
-                    <div class="flex justify-between mx-10 border-b-2 mt-8">
+                    <div class="flex justify-between mx-10 border-b-2 mt-8 text-base md:text-lg">
                         <p class="font-bold">Shave</p>
                         <p class="text-accentColor font-bold">$30</p>
                     </div>
-                    <div class="flex justify-between mx-10 border-b-2 mt-8">
+                    <div class="flex justify-between mx-10 border-b-2 mt-8 text-base md:text-lg">
                         <p class="font-bold">Haircut + Shave</p>
                         <p class="text-accentColor font-bold">$70</p>
                     </div>
-                    <div class="flex justify-between mx-10 border-b-2 mt-8">
+                    <div class="flex justify-between mx-10 border-b-2 mt-8 text-base md:text-lg">
                         <p class="font-bold">Trim (Back and Sides)</p>
                         <p class="text-accentColor font-bold">$25</p>
                     </div>
-                    <div class="flex justify-between mx-10 border-b-2 mt-8">
+                    <div class="flex justify-between mx-10 border-b-2 mt-8 text-base md:text-lg">
                         <p class="font-bold">Beard Trim</p>
                         <p class="text-accentColor font-bold">$15</p>
                     </div>
@@ -165,8 +186,8 @@
                 </article>
             </div>
         </section>
-        <section class="w-full mx-auto text-white flex flex-col justify-center items-center bg-homeBg bg-cover bg-center" id="contact">
-            <h3 class="text-white text-3xl font-bold mt-16 md:text-5xl md:mt-28">Make an Appointment</h3>
+        <section class="w-full h-screen mx-auto text-white flex flex-col justify-center items-center bg-quoteBg bg-cover bg-blend-multiply bg-center" id="contact">
+            <h3 class="text-accentColor text-3xl font-bold mt-16 md:text-5xl md:mt-28 font-PTsans">Make an Appointment</h3>
             <p class="text-center text-accentColor font-bold text-3xl mb-5">...</p>
             <form class="grid md:grid-cols-2 gap-4 items-center w-1/2 md:mt-20" action="">
                     <input class="p-2 w-full" type="text" name="first_name" placeholder="First name" required>
@@ -174,8 +195,8 @@
                     <input class="p-2 w-full" type="email" name="email" placeholder="email address" required>
                     <input class="p-2 w-full" type="tel" name="tel" placeholder="phone number" required>
                 <textarea class="p-2 md:col-span-2" name="message" id="message" rows="5" placeholder="Enter text" required></textarea>
+                <button class="bg-accentColor px-6 py-4 mb-40 md:w-48 md:h-20 md:mt-12 md:col-span-2 justify-self-center text-white uppercase mt-4 mx-10 md:text-2xl" type="submit">Submit</button>
             </form>
-            <button class="bg-accentColor px-6 py-4 mb-40 md:w-48 md:h-20 md:mt-12 text-white uppercase mt-4 mx-10" type="submit">Send Message</button>
         </section>
     </main>
     <footer class="w-full mx-auto bg-black text-white h-28 flex items-center justify-center">
