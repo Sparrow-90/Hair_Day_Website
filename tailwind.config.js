@@ -19,6 +19,12 @@ module.exports = {
         'homeBg' : 'url("./assets/image-about.jpg")',
         'contactBg' : 'url("./assets/contact-image.jpg")',
         'quoteBg' : 'url("./assets/quote-image.jpg")'
+      },
+      aspectRatio: {
+        '4/3' : '4 / 3',
+        '3/4' : '3 / 4',
+        '3/5' : '3 / 5'
+
       }
     },
   },
